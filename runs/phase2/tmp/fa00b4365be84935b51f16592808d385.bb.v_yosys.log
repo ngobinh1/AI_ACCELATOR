@@ -1,0 +1,32 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+-- Running command `
+                    verilog_defines -DUSE_POWER_PINS;
+verilog_defines -D__openlane__;
+verilog_defines -DPDK_sky130A;
+verilog_defines -DSCL_sky130_fd_sc_hd;
+verilog_defines -D__pnr__;
+read_verilog -sv -lib /home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/tmp/fa00b4365be84935b51f16592808d385.bb.v;
+
+                    blackbox;
+                    write_verilog -noattr -noexpr -nohex -nodec -defparam -blackboxes /home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/tmp/fa00b4365be84935b51f16592808d385.bb.v;
+                    ' --
+
+1. Executing Verilog-2005 frontend: /home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/tmp/fa00b4365be84935b51f16592808d385.bb.v
+Parsing SystemVerilog input from `/home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/tmp/fa00b4365be84935b51f16592808d385.bb.v' to AST representation.
+Generating RTLIL representation for module `\sky130_sram_2kbyte_1rw1r_32x512_8'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog backend.
+Dumping module `\sky130_sram_2kbyte_1rw1r_32x512_8'.
+
+End of script. Logfile hash: 12ae94679c, CPU: user 0.06s system 0.03s, MEM: 54.02 MB peak
+Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Time spent: 70% 2x read_verilog (0 sec), 22% 1x clean_zerowidth (0 sec), ...

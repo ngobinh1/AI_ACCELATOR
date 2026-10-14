@@ -1,0 +1,74 @@
+{
+    "DESIGN_NAME": "riscv_core_top",
+    "VERILOG_FILES": [
+        "dir::rtl/defines/riscv_core_defines.vh",
+        "dir::rtl/core/alu.v",
+        "dir::rtl/core/be_gen.v",
+        "dir::rtl/core/booth_multiplier_32b.v",
+        "dir::rtl/core/branch_comparator.v",
+        "dir::rtl/core/core_top.v",
+        "dir::rtl/core/csr.v",
+        "dir::rtl/core/hazard_unit.v",
+        "dir::rtl/core/imm_gen.v",
+        "dir::rtl/core/instruction_decoder.v",
+        "dir::rtl/core/load_align.v",
+        "dir::rtl/core/forwarding_unit.v",
+        "dir::rtl/core/pipe_reg_if_id.v",
+        "dir::rtl/core/pipe_reg_ex_mem.v",
+        "dir::rtl/core/register_file.v",
+        "dir::rtl/core/rvc_decompressor.v",
+        "dir::rtl/core/stage_if.v",
+        "dir::rtl/core/stage_id_ex.v",
+        "dir::rtl/core/stage_mem_wb.v",
+        "dir::rtl/core/st_align.v",
+        "dir::rtl/core/simd_mac_unit.v",
+        "dir::rtl/core/sync_2ff.v",
+        "dir::rtl/bus/apb_bridge.v"
+    ],
+    "VERILOG_INCLUDE_DIRS": [
+        "dir::rtl/defines",
+        "dir::rtl/core"
+    ],
+    "CLOCK_PORT": "i_clk",
+    "CLOCK_PERIOD": 12.0,
+    "PNR_SDC_FILE": "dir::riscv_core_top.sdc",
+    "SIGNOFF_SDC_FILE": "dir::riscv_core_top.sdc",
+    "RSZ_DONT_TOUCH_RX": ".*u_sram_2kb.*|.*sky130_sram.*|.*sram.*|.*imem.*|.*o_mem_wdata.*|.*i_ex_result.*|.*i_instr.*|.*mem_addr.*|.*o_mem_addr.*|.*jalr_target.*|.*addr0.*",
+    "RUN_POST_GPL_DESIGN_REPAIR": true,
+    "RUN_POST_CTS_RESIZER_TIMING": false,
+    "PRIMARY_GDSII_STREAMOUT_TOOL": "klayout",
+    "RUN_MAGIC_STREAMOUT": false,
+    "RUN_MAGIC_WRITE_LEF": false,
+    "RUN_MAGIC_DRC": false,
+    "RUN_KLAYOUT_STREAMOUT": true,
+    "RUN_KLAYOUT_DRC": false,
+    "RUN_KLAYOUT_XOR": false,
+    "RUN_LVS": false,
+    "FP_CORE_UTIL": 30,
+    "PL_TARGET_DENSITY_PCT": 40,
+    "GRT_ALLOW_CONGESTION": true,
+    "MACROS": {
+        "sky130_sram_2kbyte_1rw1r_32x512_8": {
+            "instances": {
+                "u_sram_2kb": {
+                    "location": [50, 50],
+                    "orientation": "N"
+                }
+            },
+            "gds": [
+                "/home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds"
+            ],
+            "lef": [
+                "/home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef"
+            ],
+            "nl": [
+                "/home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v"
+            ],
+            "lib": {
+                "*": [
+                    "/home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/lib/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib"
+                ]
+            }
+        }
+    }
+}

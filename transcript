@@ -1,0 +1,66 @@
+# vsim -lib sim/work -c -do "run -all; quit" tb_isa_compliance 
+# Start time: 21:31:11 on Oct 14,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_isa_compliance(fast)
+# run -all
+# ================================================================================
+#    PHASE 7: RV32I DIRECTED ISA COMPLIANCE VERIFICATION SUITE                    
+# ================================================================================
+# --------------------------------------------------------------------------------
+#  RUNNING VERIFICATION CHECKS:
+# --------------------------------------------------------------------------------
+#  [PASS] Test  1: LUI (Load Upper Immediate)       | x 1 = 0x12345000 (305418240)
+#  [PASS] Test  2: AUIPC (Add Upper Imm to PC)      | x 2 = 0x00001004 (4100)
+#  [PASS] Test  3: AND (x4 & x5 = 15 & 51)          | x 6 = 0x00000003 (3)
+#  [PASS] Test  4: ANDI (x4 & 5 = 15 & 5)           | x 7 = 0x00000005 (5)
+#  [PASS] Test  5: OR (x4 | x5 = 15 | 51)           | x 8 = 0x0000003f (63)
+#  [PASS] Test  6: ORI (x4 | 32 = 15 | 32)          | x 9 = 0x0000002f (47)
+#  [PASS] Test  7: XOR (x4 ^ x5 = 15 ^ 51)          | x10 = 0x0000003c (60)
+#  [PASS] Test  8: XORI (x4 ^ 85 = 15 ^ 85)         | x11 = 0x0000005a (90)
+#  [PASS] Test  9: SLLI (15 << 4)                   | x12 = 0x000000f0 (240)
+#  [PASS] Test 10: SLL (15 << 2)                    | x13 = 0x0000003c (60)
+#  [PASS] Test 11: SRLI (240 >> 2)                  | x14 = 0x0000003c (60)
+#  [PASS] Test 12: SRL (240 >> 2)                   | x15 = 0x0000003c (60)
+#  [PASS] Test 13: SRAI (-16 >>> 2 = -4)            | x17 = 0xfffffffc (-4)
+#  [PASS] Test 14: SRA (-16 >>> 2 = -4)             | x18 = 0xfffffffc (-4)
+#  [PASS] Test 15: SLT signed (-10 < 5)             | x19 = 0x00000001 (1)
+#  [PASS] Test 16: SLT signed (5 < -10)             | x20 = 0x00000000 (0)
+#  [PASS] Test 17: SLTI signed (-10 < 0)            | x21 = 0x00000001 (1)
+#  [PASS] Test 18: SLTI signed (5 < 0)              | x22 = 0x00000000 (0)
+#  [PASS] Test 19: SLTU unsigned (0xFFFFFFF6 < 5)   | x23 = 0x00000000 (0)
+#  [PASS] Test 20: SLTU unsigned (5 < 0xFFFFFFF6)   | x24 = 0x00000001 (1)
+#  [PASS] Test 21: SLTIU unsigned (5 < 10)          | x25 = 0x00000001 (1)
+#  [PASS] Test 22: SLTIU unsigned (0xFFFFFFF6 < 10) | x26 = 0x00000000 (0)
+#  [PASS] Test 23: BLTU unsigned branch taken       | x27 = 0x00000001 (1)
+#  [PASS] Test 24: BGEU unsigned branch taken       | x28 = 0x00000001 (1)
+#  [PASS] Test 25: SW/SB/SH composite word at 0x300 | mem[192] = 0xfedc55aa
+#  [PASS] Test 26: LBU byte 0 unsigned (0xAA)       | x29 = 0x000000aa (170)
+#  [PASS] Test 27: LB byte 0 signed (0xAA -> sign ext) | x30 = 0xffffffaa (-86)
+#  [PASS] Test 28: LB byte 1 signed (0x55)          | x31 = 0x00000055 (85)
+#  [PASS] Test 29: LHU halfword 1 unsigned (0xFEDC) | x 4 = 0x0000fedc (65244)
+#  [PASS] Test 30: LH halfword 1 signed (0xFEDC -> sign ext) | x 5 = 0xfffffedc (-292)
+#  [PASS] Test 31: LW word from 0x300               | x 3 = 0xfedc55aa (-19114582)
+# --------------------------------------------------------------------------------
+#  TEST RESULTS SUMMARY: 31 / 31 PASSED
+# --------------------------------------------------------------------------------
+# 
+#  >>> ALL 31 RV32I DIRECTED ISA COMPLIANCE TESTS PASSED (100%)! <<<
+# 
+# ** Note: $finish    : tb/tb_isa_compliance.v(232)
+#    Time: 655 ns  Iteration: 0  Instance: /tb_isa_compliance
+# End time: 21:31:12 on Oct 14,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

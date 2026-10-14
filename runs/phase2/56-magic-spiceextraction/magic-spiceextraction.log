@@ -1,0 +1,614 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/4pyixb03xfwwy77zxxplrggxrmm9f57y-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> lef read /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+Reading LEF data from file /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef.
+This action cannot be undone.
+LEF read: Processed 56536 lines.
+> lef read /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef
+Reading LEF data from file /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef.
+This action cannot be undone.
+LEF read: Processed 278 lines.
+> lef read /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef
+Reading LEF data from file /home/ngobinh/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef.
+This action cannot be undone.
+LEF read: Processed 1116 lines.
+> def read /home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/51-odb-cellfrequencytables/riscv_core_top.def -noblockage -labels
+Reading DEF data from file /home/ngobinh/RISCV_IOT_AIACCELATOR/runs/RUN_2026-09-29_22-04-11/51-odb-cellfrequencytables/riscv_core_top.def.
+This action cannot be undone.
+  Processed 4 vias total.
+  Processed 130494 subcell instances total.
+  Processed 111 pins total.
+  Processed 4 special nets total.
+  Processed 16696 nets total.
+DEF read: Processed 440866 lines.
+Moving label "_00049_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00051_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00053_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00054_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00057_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00064_" from metal1 to viali in cell riscv_core_top.
+Moving label "_00065_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00068_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00080_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00082_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00084_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00089_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00105_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00115_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00142_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00143_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00145_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00153_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00160_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00177_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00184_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00288_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00310_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00415_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00419_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00424_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00434_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00436_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00438_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00441_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00449_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00455_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00471_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00473_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00474_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00483_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00491_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00506_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00515_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00538_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00539_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00540_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00541_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00542_" from metal1 to viali in cell riscv_core_top.
+Moving label "_00545_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00550_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00553_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00562_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00564_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00585_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_00612_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00646_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00649_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00658_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00667_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00668_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00671_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00676_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00681_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00687_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00695_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00706_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00732_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00736_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00742_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00763_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00765_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00777_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00779_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00780_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00785_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00804_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00814_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00816_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00819_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00820_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00824_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00836_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00840_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00854_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00857_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00879_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00880_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00884_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00893_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00897_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00900_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00916_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00936_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00938_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00954_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00958_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00967_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00972_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00981_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00982_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00984_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00989_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00991_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00997_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_00998_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01000_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01005_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01010_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01030_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01033_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01042_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01044_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01045_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01046_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01059_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01061_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01070_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01078_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01093_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01101_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01103_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01106_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01109_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01111_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01113_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01116_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01122_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01128_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01151_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01158_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01160_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01172_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01173_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01179_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01222_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01242_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01248_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01256_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_01275_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01277_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01280_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01284_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01289_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01291_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01296_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01297_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01299_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01526_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01528_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01551_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01567_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01568_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01573_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01733_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_01821_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_01892_" from metal1 to viali in cell riscv_core_top.
+Moving label "_02089_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02183_" from metal1 to viali in cell riscv_core_top.
+Moving label "_02271_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_02305_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02324_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_02369_" from metal1 to viali in cell riscv_core_top.
+Moving label "_02476_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02521_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_02558_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02614_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_02721_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02738_" from metal1 to viali in cell riscv_core_top.
+Moving label "_02770_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02777_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_02888_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_02971_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03072_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03161_" from metal1 to viali in cell riscv_core_top.
+Moving label "_03193_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03199_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03200_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03264_" from metal1 to viali in cell riscv_core_top.
+Moving label "_03353_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03398_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03432_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_03530_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03539_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_03570_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_03578_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03744_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03770_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03812_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03874_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03909_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_03922_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03932_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_03988_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_03998_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_04075_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_04149_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04170_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04218_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_04222_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04231_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04318_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_04354_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_04385_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_04398_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_04460_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04534_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_04548_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_04580_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04603_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_04627_" from metal1 to viali in cell riscv_core_top.
+Moving label "_04747_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04799_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04880_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04937_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_04970_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_04971_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05079_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05083_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05086_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_05121_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_05226_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05300_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_05336_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_05395_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_05398_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05406_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05412_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05445_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05465_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_05469_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05631_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05686_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_05691_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05711_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_05718_" from metal1 to viali in cell riscv_core_top.
+Moving label "_05720_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05765_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05831_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05855_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_05898_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06035_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06080_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06101_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06125_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06142_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06164_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06200_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06224_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06242_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06322_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06342_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06353_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06435_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_06457_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06494_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06569_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06703_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06712_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06813_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_06829_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_06864_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_06897_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06975_" from metal1 to viali in cell riscv_core_top.
+Moving label "_06979_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07009_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_07107_" from metal1 to viali in cell riscv_core_top.
+Moving label "_07155_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07370_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07388_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07473_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07555_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_07657_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_07692_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07714_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07718_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07730_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07743_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07745_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_07755_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_07795_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_07809_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_07812_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_07826_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07834_" from metal1 to viali in cell riscv_core_top.
+Moving label "_07856_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_07886_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08127_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_08134_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08140_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08147_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08364_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08472_" from metal1 to viali in cell riscv_core_top.
+Moving label "_08475_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_08541_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08595_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_08627_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_08659_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08690_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08739_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_08882_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_08910_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_08971_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09027_" from metal1 to viali in cell riscv_core_top.
+Moving label "_09031_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09034_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_09098_" from metal1 to viali in cell riscv_core_top.
+Moving label "_09114_" from metal1 to viali in cell riscv_core_top.
+Moving label "_09254_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09255_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09332_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09343_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09355_" from metal1 to viali in cell riscv_core_top.
+Moving label "_09544_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_09678_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_09692_" from metal1 to viali in cell riscv_core_top.
+Moving label "_09873_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_09960_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_09968_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_10001_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10192_" from metal1 to viali in cell riscv_core_top.
+Moving label "_10214_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10266_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_10277_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10343_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10398_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_10444_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10491_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_10506_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10739_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10894_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_10998_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_11037_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_11145_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11168_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11175_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11177_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_11188_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11346_" from metal1 to viali in cell riscv_core_top.
+Moving label "_11358_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_11505_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_11542_" from metal1 to viali in cell riscv_core_top.
+Moving label "_11543_" from metal1 to viali in cell riscv_core_top.
+Moving label "_11546_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_11589_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11655_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_11708_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11713_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11726_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11748_" from metal1 to viali in cell riscv_core_top.
+Moving label "_11795_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11796_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_11818_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_11868_" from metal1 to viali in cell riscv_core_top.
+Moving label "_12026_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12033_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12046_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12098_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_12175_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_12266_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12311_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12319_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12334_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_12350_" from metal3 to via3 in cell riscv_core_top.
+Moving label "_12375_" from metal1 to viali in cell riscv_core_top.
+Moving label "_12384_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12423_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_12454_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_12497_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_12498_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12500_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12551_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12562_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_12583_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_12632_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12693_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12842_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_12859_" from metal2 to via1 in cell riscv_core_top.
+Moving label "_12886_" from metal2 to via2 in cell riscv_core_top.
+Moving label "_12935_" from metal1 to viali in cell riscv_core_top.
+Moving label "_12976_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_13166_" from metal1 to via1 in cell riscv_core_top.
+Moving label "_13340_" from metal1 to viali in cell riscv_core_top.
+Moving label "_13348_" from metal1 to viali in cell riscv_core_top.
+Moving label "_13389_" from metal2 to via1 in cell riscv_core_top.
+Moving label "clknet_2_1_0_i_clk" from metal2 to via2 in cell riscv_core_top.
+Moving label "clknet_2_2_0_i_clk" from metal2 to via2 in cell riscv_core_top.
+Moving label "clknet_3_5_0_i_clk" from metal3 to via3 in cell riscv_core_top.
+Moving label "clknet_3_7_0_i_clk" from metal3 to via3 in cell riscv_core_top.
+Moving label "clknet_4_8__leaf_i_clk" from metal2 to via2 in cell riscv_core_top.
+Moving label "clknet_leaf_1_i_clk" from metal1 to via1 in cell riscv_core_top.
+Moving label "clknet_leaf_221_i_clk" from metal2 to via1 in cell riscv_core_top.
+Moving label "net1230" from metal1 to viali in cell riscv_core_top.
+Moving label "net1291" from metal1 to viali in cell riscv_core_top.
+Moving label "net394" from metal2 to via2 in cell riscv_core_top.
+Moving label "net401" from metal2 to via1 in cell riscv_core_top.
+Moving label "o_apb_paddr[3]" from metal2 to via2 in cell riscv_core_top.
+Moving label "o_apb_paddr[6]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_apb_bridge.i_addr\[2\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_csr.i_mem_write" from metal1 to viali in cell riscv_core_top.
+Moving label "u_csr.i_next_commit_pc\[29\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_csr.i_rs1_data\[30\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_csr.mcause\[25\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_csr.mcause\[30\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_csr.mcause\[5\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_csr.mepc\[16\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_csr.mtval\[13\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_csr.mtval\[30\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_csr.mtvec\[4\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_csr.mtvec\[6\]" from metal1 to viali in cell riscv_core_top.
+Moving label "u_pipe_reg.o_rs2_data\[0\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_pipe_reg.o_rs2_data\[22\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_pipe_reg.o_rs2_data\[26\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_ex.o_dmem_we\[1\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_stage_if_id.i_instr\[11\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.i_instr\[18\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_stage_if_id.i_instr\[2\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[0\]\[29\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[0\]\[7\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[12\]\[8\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[18\]\[25\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[23\]\[20\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[24\]\[19\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[26\]\[9\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[29\]\[14\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[29\]\[26\]" from metal2 to via2 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[29\]\[5\]" from metal1 to viali in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[2\]\[27\]" from metal1 to viali in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[30\]\[16\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[30\]\[26\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[31\]\[9\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[5\]\[20\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[6\]\[17\]" from metal1 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[6\]\[9\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[7\]\[1\]" from metal1 to viali in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[9\]\[0\]" from metal2 to via1 in cell riscv_core_top.
+Moving label "u_stage_if_id.u_register_file.r_regs\[9\]\[17\]" from metal2 to via2 in cell riscv_core_top.
+Processing riscv_core_top
+Extracting sky130_ef_sc_hd__decap_12 into sky130_ef_sc_hd__decap_12.ext:
+Extracting sky130_fd_sc_hd__decap_3 into sky130_fd_sc_hd__decap_3.ext:
+Extracting sky130_fd_sc_hd__fill_1 into sky130_fd_sc_hd__fill_1.ext:
+Extracting sky130_fd_sc_hd__tapvpwrvgnd_1 into sky130_fd_sc_hd__tapvpwrvgnd_1.ext:
+Extracting sky130_fd_sc_hd__decap_4 into sky130_fd_sc_hd__decap_4.ext:
+Extracting sky130_fd_sc_hd__decap_6 into sky130_fd_sc_hd__decap_6.ext:
+Extracting sky130_fd_sc_hd__diode_2 into sky130_fd_sc_hd__diode_2.ext:
+Extracting sky130_fd_sc_hd__mux2_1 into sky130_fd_sc_hd__mux2_1.ext:
+Extracting sky130_fd_sc_hd__dfrtp_2 into sky130_fd_sc_hd__dfrtp_2.ext:
+Extracting sky130_fd_sc_hd__o21a_2 into sky130_fd_sc_hd__o21a_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_8 into sky130_fd_sc_hd__clkbuf_8.ext:
+Extracting sky130_fd_sc_hd__fill_2 into sky130_fd_sc_hd__fill_2.ext:
+Extracting sky130_fd_sc_hd__decap_8 into sky130_fd_sc_hd__decap_8.ext:
+Extracting sky130_fd_sc_hd__nor2_2 into sky130_fd_sc_hd__nor2_2.ext:
+Extracting sky130_fd_sc_hd__nand2_2 into sky130_fd_sc_hd__nand2_2.ext:
+Extracting sky130_fd_sc_hd__or2_2 into sky130_fd_sc_hd__or2_2.ext:
+Extracting sky130_fd_sc_hd__and3_2 into sky130_fd_sc_hd__and3_2.ext:
+Extracting sky130_fd_sc_hd__inv_8 into sky130_fd_sc_hd__inv_8.ext:
+Extracting sky130_fd_sc_hd__clkinv_2 into sky130_fd_sc_hd__clkinv_2.ext:
+Extracting sky130_fd_sc_hd__and4b_2 into sky130_fd_sc_hd__and4b_2.ext:
+Extracting sky130_fd_sc_hd__and2_2 into sky130_fd_sc_hd__and2_2.ext:
+Extracting sky130_fd_sc_hd__a21oi_2 into sky130_fd_sc_hd__a21oi_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_4 into sky130_fd_sc_hd__clkbuf_4.ext:
+Extracting sky130_fd_sc_hd__or4_2 into sky130_fd_sc_hd__or4_2.ext:
+Extracting sky130_fd_sc_hd__inv_2 into sky130_fd_sc_hd__inv_2.ext:
+Extracting sky130_fd_sc_hd__o21a_4 into sky130_fd_sc_hd__o21a_4.ext:
+Extracting sky130_fd_sc_hd__a21o_2 into sky130_fd_sc_hd__a21o_2.ext:
+Extracting sky130_fd_sc_hd__o21ai_2 into sky130_fd_sc_hd__o21ai_2.ext:
+Extracting sky130_fd_sc_hd__o41a_2 into sky130_fd_sc_hd__o41a_2.ext:
+Extracting sky130_fd_sc_hd__a2111oi_2 into sky130_fd_sc_hd__a2111oi_2.ext:
+Extracting sky130_sram_2kbyte_1rw1r_32x512_8 into sky130_sram_2kbyte_1rw1r_32x512_8.ext:
+Extracting sky130_fd_sc_hd__and2b_2 into sky130_fd_sc_hd__and2b_2.ext:
+Extracting sky130_fd_sc_hd__or4bb_2 into sky130_fd_sc_hd__or4bb_2.ext:
+Extracting sky130_fd_sc_hd__clkbuf_16 into sky130_fd_sc_hd__clkbuf_16.ext:
+Extracting sky130_fd_sc_hd__bufinv_16 into sky130_fd_sc_hd__bufinv_16.ext:
+Extracting sky130_fd_sc_hd__buf_12 into sky130_fd_sc_hd__buf_12.ext:
+Extracting sky130_fd_sc_hd__and4_2 into sky130_fd_sc_hd__and4_2.ext:
+Extracting sky130_fd_sc_hd__xnor2_2 into sky130_fd_sc_hd__xnor2_2.ext:
+Extracting sky130_fd_sc_hd__a22o_2 into sky130_fd_sc_hd__a22o_2.ext:
+Extracting sky130_fd_sc_hd__or3_2 into sky130_fd_sc_hd__or3_2.ext:
+Extracting sky130_fd_sc_hd__nand3_2 into sky130_fd_sc_hd__nand3_2.ext:
+Extracting sky130_fd_sc_hd__o211ai_2 into sky130_fd_sc_hd__o211ai_2.ext:
+Extracting sky130_fd_sc_hd__a211o_2 into sky130_fd_sc_hd__a211o_2.ext:
+Extracting sky130_fd_sc_hd__xor2_2 into sky130_fd_sc_hd__xor2_2.ext:
+Extracting sky130_fd_sc_hd__a21bo_2 into sky130_fd_sc_hd__a21bo_2.ext:
+Extracting sky130_fd_sc_hd__o2bb2a_2 into sky130_fd_sc_hd__o2bb2a_2.ext:
+Extracting sky130_fd_sc_hd__nand2b_2 into sky130_fd_sc_hd__nand2b_2.ext:
+Extracting sky130_fd_sc_hd__dlygate4sd3_1 into sky130_fd_sc_hd__dlygate4sd3_1.ext:
+Extracting sky130_fd_sc_hd__a31o_2 into sky130_fd_sc_hd__a31o_2.ext:
+Extracting sky130_fd_sc_hd__a22oi_2 into sky130_fd_sc_hd__a22oi_2.ext:
+Extracting sky130_fd_sc_hd__a31oi_2 into sky130_fd_sc_hd__a31oi_2.ext:
+Extracting sky130_fd_sc_hd__o21bai_2 into sky130_fd_sc_hd__o21bai_2.ext:
+Extracting sky130_fd_sc_hd__and4bb_2 into sky130_fd_sc_hd__and4bb_2.ext:
+Extracting sky130_fd_sc_hd__o311a_2 into sky130_fd_sc_hd__o311a_2.ext:
+Extracting sky130_fd_sc_hd__or3b_2 into sky130_fd_sc_hd__or3b_2.ext:
+Extracting sky130_fd_sc_hd__nand4_2 into sky130_fd_sc_hd__nand4_2.ext:
+Extracting sky130_fd_sc_hd__a311oi_2 into sky130_fd_sc_hd__a311oi_2.ext:
+Extracting sky130_fd_sc_hd__a2bb2o_2 into sky130_fd_sc_hd__a2bb2o_2.ext:
+Extracting sky130_fd_sc_hd__dfstp_2 into sky130_fd_sc_hd__dfstp_2.ext:
+Extracting sky130_fd_sc_hd__or4b_2 into sky130_fd_sc_hd__or4b_2.ext:
+Extracting sky130_fd_sc_hd__o211a_2 into sky130_fd_sc_hd__o211a_2.ext:
+Extracting sky130_fd_sc_hd__inv_6 into sky130_fd_sc_hd__inv_6.ext:
+Extracting sky130_fd_sc_hd__inv_4 into sky130_fd_sc_hd__inv_4.ext:
+Extracting sky130_fd_sc_hd__a32o_2 into sky130_fd_sc_hd__a32o_2.ext:
+Extracting sky130_fd_sc_hd__a211oi_2 into sky130_fd_sc_hd__a211oi_2.ext:
+Extracting sky130_fd_sc_hd__nor3_2 into sky130_fd_sc_hd__nor3_2.ext:
+Extracting sky130_fd_sc_hd__nor4_2 into sky130_fd_sc_hd__nor4_2.ext:
+Extracting sky130_fd_sc_hd__o22ai_2 into sky130_fd_sc_hd__o22ai_2.ext:
+Extracting sky130_fd_sc_hd__a221o_2 into sky130_fd_sc_hd__a221o_2.ext:
+Extracting sky130_fd_sc_hd__a21boi_2 into sky130_fd_sc_hd__a21boi_2.ext:
+Extracting sky130_fd_sc_hd__o31ai_2 into sky130_fd_sc_hd__o31ai_2.ext:
+Extracting sky130_fd_sc_hd__o21ba_2 into sky130_fd_sc_hd__o21ba_2.ext:
+Extracting sky130_fd_sc_hd__o221a_2 into sky130_fd_sc_hd__o221a_2.ext:
+Extracting sky130_fd_sc_hd__and3b_2 into sky130_fd_sc_hd__and3b_2.ext:
+Extracting sky130_fd_sc_hd__o22a_2 into sky130_fd_sc_hd__o22a_2.ext:
+Extracting sky130_fd_sc_hd__o31a_2 into sky130_fd_sc_hd__o31a_2.ext:
+Extracting sky130_fd_sc_hd__a2bb2oi_2 into sky130_fd_sc_hd__a2bb2oi_2.ext:
+Extracting sky130_fd_sc_hd__o32a_2 into sky130_fd_sc_hd__o32a_2.ext:
+Extracting sky130_fd_sc_hd__a2111o_2 into sky130_fd_sc_hd__a2111o_2.ext:
+Extracting sky130_fd_sc_hd__a311o_2 into sky130_fd_sc_hd__a311o_2.ext:
+Extracting sky130_fd_sc_hd__clkinv_4 into sky130_fd_sc_hd__clkinv_4.ext:
+Extracting sky130_fd_sc_hd__o2bb2ai_2 into sky130_fd_sc_hd__o2bb2ai_2.ext:
+Extracting sky130_fd_sc_hd__o221ai_2 into sky130_fd_sc_hd__o221ai_2.ext:
+Extracting sky130_fd_sc_hd__nand3b_2 into sky130_fd_sc_hd__nand3b_2.ext:
+Extracting sky130_fd_sc_hd__and2_4 into sky130_fd_sc_hd__and2_4.ext:
+Extracting sky130_fd_sc_hd__nand2_4 into sky130_fd_sc_hd__nand2_4.ext:
+Extracting sky130_fd_sc_hd__nor4b_2 into sky130_fd_sc_hd__nor4b_2.ext:
+Extracting sky130_fd_sc_hd__and4_4 into sky130_fd_sc_hd__and4_4.ext:
+Extracting sky130_fd_sc_hd__nand3_4 into sky130_fd_sc_hd__nand3_4.ext:
+Extracting sky130_fd_sc_hd__nor3b_2 into sky130_fd_sc_hd__nor3b_2.ext:
+Extracting sky130_fd_sc_hd__a41o_2 into sky130_fd_sc_hd__a41o_2.ext:
+Extracting sky130_fd_sc_hd__nand2_8 into sky130_fd_sc_hd__nand2_8.ext:
+Extracting sky130_fd_sc_hd__inv_12 into sky130_fd_sc_hd__inv_12.ext:
+Extracting sky130_fd_sc_hd__a221oi_2 into sky130_fd_sc_hd__a221oi_2.ext:
+Extracting sky130_fd_sc_hd__nor3_4 into sky130_fd_sc_hd__nor3_4.ext:
+Extracting sky130_fd_sc_hd__o2111a_2 into sky130_fd_sc_hd__o2111a_2.ext:
+Extracting sky130_fd_sc_hd__and4_1 into sky130_fd_sc_hd__and4_1.ext:
+Extracting sky130_fd_sc_hd__a2111oi_4 into sky130_fd_sc_hd__a2111oi_4.ext:
+Extracting sky130_fd_sc_hd__bufinv_8 into sky130_fd_sc_hd__bufinv_8.ext:
+Extracting sky130_fd_sc_hd__and2_1 into sky130_fd_sc_hd__and2_1.ext:
+Extracting sky130_fd_sc_hd__clkinvlp_4 into sky130_fd_sc_hd__clkinvlp_4.ext:
+Extracting sky130_fd_sc_hd__o311ai_2 into sky130_fd_sc_hd__o311ai_2.ext:
+Extracting sky130_fd_sc_hd__o2111ai_2 into sky130_fd_sc_hd__o2111ai_2.ext:
+Extracting sky130_fd_sc_hd__dfxtp_2 into sky130_fd_sc_hd__dfxtp_2.ext:
+Extracting sky130_fd_sc_hd__mux4_2 into sky130_fd_sc_hd__mux4_2.ext:
+Extracting sky130_fd_sc_hd__clkinv_8 into sky130_fd_sc_hd__clkinv_8.ext:
+Extracting sky130_fd_sc_hd__o31a_4 into sky130_fd_sc_hd__o31a_4.ext:
+Extracting sky130_fd_sc_hd__dfrtp_4 into sky130_fd_sc_hd__dfrtp_4.ext:
+Extracting sky130_fd_sc_hd__nor2_4 into sky130_fd_sc_hd__nor2_4.ext:
+Extracting sky130_fd_sc_hd__buf_1 into sky130_fd_sc_hd__buf_1.ext:
+Extracting sky130_fd_sc_hd__a32oi_2 into sky130_fd_sc_hd__a32oi_2.ext:
+Extracting sky130_fd_sc_hd__nor4_4 into sky130_fd_sc_hd__nor4_4.ext:
+Extracting sky130_fd_sc_hd__nand4b_2 into sky130_fd_sc_hd__nand4b_2.ext:
+Extracting riscv_core_top into riscv_core_top.ext:
+exttospice finished.
+Using technology "sky130A", version 1.0.493-0-g0fe599b
